@@ -58,11 +58,11 @@ a:hover {
     body {
         font-size: 16px;
         background: 
-            url("image1.jpg") top center no-repeat,
-            url("image2.jpg") center center no-repeat,
-            url("image3.jpg") bottom center no-repeat,
-            url("image4.jpg") top center no-repeat,
-            url("image5.jpg") bottom center no-repeat;
+            url("1738761901844733.jpg") top center no-repeat,
+            url("1738761902238008.jpg") center center no-repeat,
+            url("1738761906347497.jpg") bottom center no-repeat,
+            url("1738761909118255.jpg") top center no-repeat,
+            url("1738761909867126.jpg") bottom center no-repeat;
         background-size: contain;
     }
     .background-section {
