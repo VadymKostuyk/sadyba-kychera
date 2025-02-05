@@ -67,7 +67,7 @@ a:hover {
            - Для верхнього зображення: auto (натуральний розмір або змініть за потребою)
            - Для центрального: наприклад, 150% за шириною, auto по висоті
            - Для нижнього: auto (натуральний розмір) */
-        background-size: cover, contain, contain, contain;
+        background-size: cover, auto, contain, contain;
     }
  body { font-size: 16px;
         background-size: 150% auto;  }
