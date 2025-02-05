@@ -18,13 +18,13 @@ body {
 /* Загальний стиль силок для всіх силок */
 a {
     text-decoration: none;
-    color: #007BFF;
+    color: #c79c64;
     font-size: 22px;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #c79c64;
     text-decoration: underline;
 }
 
@@ -69,6 +69,6 @@ a:hover {
            - Для верхнього зображення: auto (натуральний розмір або змініть за потребою)
            - Для центрального: наприклад, 150% за шириною, auto по висоті
            - Для нижнього: auto (натуральний розмір) */
-        background-size: cover, auto, 150% auto, auto;
+        background-size: cover, contain, contain, contain;
     }
 }
