@@ -62,9 +62,10 @@ a:hover {
         background: 
           linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
           url("1738761901844733.jpg") top center no-repeat,
+          url("1738761906347497.jpg")  center no-repeat,
           url("1738761902238008.jpg") center center no-repeat,
           url("1738761909867126.jpg") bottom center no-repeat;
-        background-size: cover, contain, contain, contain;
+        background-size: cover, contain, contain, contain, contain;
     }
     
     .section {
