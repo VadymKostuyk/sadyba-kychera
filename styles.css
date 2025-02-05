@@ -5,9 +5,9 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    /* Фон: накладаємо напівпрозорий темний градієнт поверх фонового зображення */
+    /* На ПК використовується один фон із напівпрозорим оверлеєм */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("1738761902238008.jpg");
-    background-size: cover;       /* За замовчуванням зображення покриває весь фон */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -18,13 +18,13 @@ body {
 /* Загальний стиль силок для всіх силок */
 a {
     text-decoration: none;
-   color: #c79c64;
+    color: #007BFF;
     font-size: 22px;
     transition: color 0.3s ease;
 }
 
 a:hover {
-   color: #c79c64;
+    color: #0056b3;
     text-decoration: underline;
 }
 
@@ -56,11 +56,19 @@ a:hover {
 /* Медіа-запит для мобільних пристроїв */
 @media only screen and (max-width: 600px) {
     body {
-        /* Зменшуємо маштаб фонового зображення на мобільних пристроях.
-           Варіанти:
-           - background-size: contain;  // показує всю картинку, але можуть з'явитись порожні області
-           - background-size: 150% auto; // масштабування зображення, де 150% — можна змінити на бажане значення
-        */
-        background-size: 150% auto;
+        /* Додаємо додаткові фоновые зображення: верхнє, центральне і нижнє */
+        /* Порядок: перший (зліва) — верхній шар, останній — найнижчий */
+        background: 
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+          url("1738761901844733.jpg") top center no-repeat, 
+          url("1738761902238008.jpg") center center no-repeat, 
+          url("1738761909867126.jpg") bottom center no-repeat;
+          
+        /* Вказуємо розміри кожного шару:
+           - Для градієнту: cover (весь фон)
+           - Для верхнього зображення: auto (натуральний розмір або змініть за потребою)
+           - Для центрального: наприклад, 150% за шириною, auto по висоті
+           - Для нижнього: auto (натуральний розмір) */
+        background-size: cover, auto, 150% auto, auto;
     }
 }
