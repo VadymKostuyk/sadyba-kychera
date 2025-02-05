@@ -55,16 +55,6 @@ a:hover {
 
 /* Медіа-запит для мобільних пристроїв */
 @media only screen and (max-width: 600px) {
-    body { font-size: 16px;
-        background-size: 150% auto;  }
-    .section {   padding: 60px; }
-    
-    h1 {font-size: 24px;}
-    
-    h2 { font-size: 20px;   }
-    
-   
-    a {font-size: 18px;  }
        
         background: 
           linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
@@ -79,4 +69,14 @@ a:hover {
            - Для нижнього: auto (натуральний розмір) */
         background-size: cover, contain, contain, contain;
     }
+ body { font-size: 16px;
+        background-size: 150% auto;  }
+    .section {   padding: 60px; }
+    
+    h1 {font-size: 24px;}
+    
+    h2 { font-size: 20px;   }
+    
+   
+    a {font-size: 18px;  }
 }
