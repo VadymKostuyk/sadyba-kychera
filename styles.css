@@ -56,33 +56,33 @@ a:hover {
 /* Медіа-запит для мобільних пристроїв */
 @media only screen and (max-width: 600px) {
     body {
-        /* Зменшений базовий розмір тексту для мобільних */
         font-size: 16px;
-        /* Додаємо додаткові фоновые зображення для верхньої та нижньої частини */
         background: 
-          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-          url("1738761901844733.jpg") top center no-repeat,
-          url("1738761906347497.jpg")  center no-repeat,
-          url("1738761902238008.jpg") center center no-repeat,
-          url("1738761909867126.jpg") bottom center no-repeat;
-        background-size: cover, contain, contain, contain, contain;
+            url("image1.jpg") top center no-repeat,
+            url("image2.jpg") center center no-repeat,
+            url("image3.jpg") bottom center no-repeat,
+            url("image4.jpg") top center no-repeat,
+            url("image5.jpg") bottom center no-repeat;
+        background-size: contain;
     }
-    
+    .background-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .background-section img {
+        width: 100%;
+        height: auto;
+    }
     .section {
-        /* Зменшені відступи для мобільної версії */
         padding: 60px;
     }
-    
     h1 {
         font-size: 24px;
     }
-    
     h2 {
         font-size: 20px;
     }
-    
     a {
         font-size: 18px;
     }
 }
-
