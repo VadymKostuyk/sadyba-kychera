@@ -18,13 +18,13 @@ body {
 /* Загальний стиль силок для всіх силок */
 a {
     text-decoration: none;
-    color: #007BFF;
+    color: #c79c64;
     font-size: 22px;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #c79c64;
     text-decoration: underline;
 }
 
