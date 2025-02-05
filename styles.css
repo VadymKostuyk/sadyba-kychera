@@ -7,7 +7,7 @@ body {
     padding: 0;
     /* Фон: накладаємо напівпрозорий темний градієнт поверх фонового зображення */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("1738761902238008.jpg");
-    background-size: cover;
+    background-size: cover;       /* За замовчуванням зображення покриває весь фон */
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -18,13 +18,13 @@ body {
 /* Загальний стиль силок для всіх силок */
 a {
     text-decoration: none;
-    color: #c79c64;
+   color: #c79c64;
     font-size: 22px;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #c79c64;
+   color: #c79c64;
     text-decoration: underline;
 }
 
@@ -51,4 +51,16 @@ a:hover {
     padding: 20px;
     margin-top: 25px;
     color: #fff;
+}
+
+/* Медіа-запит для мобільних пристроїв */
+@media only screen and (max-width: 600px) {
+    body {
+        /* Зменшуємо маштаб фонового зображення на мобільних пристроях.
+           Варіанти:
+           - background-size: contain;  // показує всю картинку, але можуть з'явитись порожні області
+           - background-size: 150% auto; // масштабування зображення, де 150% — можна змінити на бажане значення
+        */
+        background-size: 150% auto;
+    }
 }
