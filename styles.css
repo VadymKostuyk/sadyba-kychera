@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    /* На ПК використовується один фон із напівпрозорим оверлеєм */
+    /* Для ПК використовується один фон із напівпрозорим оверлеєм */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("1738761902238008.jpg");
     background-size: cover;
     background-position: center;
@@ -15,7 +15,7 @@ body {
     color: #fff;
 }
 
-/* Загальний стиль силок для всіх силок */
+/* Загальний стиль силок */
 a {
     text-decoration: none;
     color: #c79c64;
@@ -28,7 +28,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Стилізація для силок в галереї */
+/* Стилізація силок в галереї */
 .gallery a {
     display: block;
     margin: 10px 0;
@@ -55,28 +55,33 @@ a:hover {
 
 /* Медіа-запит для мобільних пристроїв */
 @media only screen and (max-width: 600px) {
-       
+    body {
+        /* Зменшений базовий розмір тексту для мобільних */
+        font-size: 16px;
+        /* Додаємо додаткові фоновые зображення для верхньої та нижньої частини */
         background: 
-          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-          url("1738761901844733.jpg") top  no-repeat, 
-          url("1738761902238008.jpg") center center no-repeat, 
-          url("1738761909867126.jpg") bottom  no-repeat;
-          
-        /* Вказуємо розміри кожного шару:
-           - Для градієнту: cover (весь фон)
-           - Для верхнього зображення: auto (натуральний розмір або змініть за потребою)
-           - Для центрального: наприклад, 150% за шириною, auto по висоті
-           - Для нижнього: auto (натуральний розмір) */
-        background-size: cover, auto, contain, contain;
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("top-image.jpg") top center no-repeat,
+          url("1738761902238008.jpg") center center no-repeat,
+          url("bottom-image.jpg") bottom center no-repeat;
+        background-size: cover, auto, 150% auto, auto;
     }
- body { font-size: 16px;
-        background-size: 150% auto;  }
-    .section {   padding: 60px; }
     
-    h1 {font-size: 24px;}
+    .section {
+        /* Зменшені відступи для мобільної версії */
+        padding: 60px;
+    }
     
-    h2 { font-size: 20px;   }
+    h1 {
+        font-size: 24px;
+    }
     
-   
-    a {font-size: 18px;  }
+    h2 {
+        font-size: 20px;
+    }
+    
+    a {
+        font-size: 18px;
+    }
 }
+
