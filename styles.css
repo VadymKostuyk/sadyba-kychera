@@ -5,14 +5,10 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    /* Для ПК використовується один фон із напівпрозорим оверлеєм */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("1738761902238008.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     text-align: center;
     font-size: 20px;
     color: #fff;
+    background: rgba(0, 0, 0, 0.6); /* Затемнений фон для тексту */
 }
 
 /* Загальний стиль силок */
@@ -57,21 +53,17 @@ a:hover {
 @media only screen and (max-width: 600px) {
     body {
         font-size: 16px;
-        background: 
-            url("1738761901844733.jpg") top center no-repeat,
-            url("1738761902238008.jpg") center center no-repeat,
-            url("1738761906347497.jpg") bottom center no-repeat,
-            url("1738761909118255.jpg") top center no-repeat,
-            url("1738761909867126.jpg") bottom center no-repeat;
-        background-size: contain;
+        background: none;
     }
     .background-section {
         display: flex;
         flex-direction: column;
+        gap: 10px; /* Відступ між зображеннями */
     }
     .background-section img {
         width: 100%;
         height: auto;
+        opacity: 0.7; /* Легка прозорість для затемнення */
     }
     .section {
         padding: 60px;
